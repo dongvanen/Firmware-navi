@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nạp Firmware ESP32</title>
+  <!-- Nhúng thư viện ESP Web Tools -->
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Nạp Code Trực Tiếp</h2>
+    <p>Cắm cáp nối ESP32/ESP8266 với máy tính (hoặc điện thoại OTG) rồi bấm nút bên dưới.</p>
+    
+    <!-- Nút nạp sẽ đọc file manifest.json -->
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+  </div>
+</body>
+</html>
